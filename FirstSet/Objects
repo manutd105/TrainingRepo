@@ -1,0 +1,50 @@
+// Objects //////////////////////////////////////
+
+// The recipe card ///////////////////////////////
+
+var recipe = 
+{
+    "title": "Mole",
+    "servings": 2,
+    "ingredients": ["cumin", "cinnamon", "cocoa"]
+};
+
+console.log(recipe.title);
+console.log("Servings: " + recipe.servings);
+console.log("Ingredients: ");
+
+for (var i = 0; i < recipe.ingredients.length; i++) 
+{
+    console.log(recipe.ingredients[i]);
+
+}
+
+// Reading list ///////////////////////////////////////
+
+var books = [
+  {title: "The Hobbit",
+   author: "J. R. R. Tolkein'",
+   alreadyRead: true
+  },
+  {title: "The Lord of the Rings",
+  author: "J. R. R. Tolkein'",
+  alreadyRead: false
+  }
+  ]; // Array of two objects
+
+  for (var i = 0; i < books.length; i++) 
+  {
+  var book = books[i]; 
+
+  if (book.alreadyRead) // boolean value
+  {
+    console.log("You already read " + book.title + " by " + book.author);
+  } else 
+  {
+    console.log("You still need to read " + book.title + " by " + book.author);
+  }
+  }
+
+  // Movie Database /////////////////////////
+
+  

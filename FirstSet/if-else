@@ -1,0 +1,75 @@
+// //////////if /else statements
+
+// Bigger Number////////////////////////////////
+
+function biggerNumber(num1, num2) 
+{
+    if (num1 > num2) 
+    {
+        return num1;
+    } 
+    else 
+    {
+        return num2;
+    }
+}
+
+console.log(biggerNumber(68, 169));
+
+// Hello world ///////////////////////////////////
+
+function wordTranslator(language) {
+    if (language == "es") {
+        return "Hola, Mundo";
+    } else if (language == "de") {
+        return "Halo welt!";
+    } else {
+        return "Hello, World";
+    }
+}
+
+console.log(helloWorld("es"));
+console.log(helloWorld("de"));
+console.log(helloWorld("en"));
+
+// Grade Assigner ///////////////////////////////////
+
+function gradeAssigner(score) 
+{
+    if (score > 95) 
+    {
+        return "A";
+    } else if (score > 80) 
+    {
+        return "B";
+    } else if (score > 70) 
+    {
+        return "C";
+    } else if (score > 60) 
+    {
+        return "D";
+    } else 
+    {
+        return "F";
+    }
+}
+
+console.log("You got a " + gradeAssigner(56));
+console.log("You got a " + gradeAssigner(60));
+console.log("You got a " + gradeAssigner(99));
+console.log("You got a " + gradeAssigner(79));
+
+// The pluralizer //////////////////////////////////////
+
+function pluralizer(noun, number) {
+    if (number != 1 && noun != "sheep" && noun != "geese" && noun != "mice") 
+    {
+        return number + " " + noun + "s";
+    } else 
+    {
+        return number + " " + noun;
+    }
+}
+console.log("I have got " + pluralizer("dog", 1));
+console.log("I have got " + pluralizer("cat", 5));
+console.log("I have got " + pluralizer("snake", 7));
