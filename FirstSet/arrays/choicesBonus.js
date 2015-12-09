@@ -1,7 +1,5 @@
 var choiceArr = ["Red","Blue","Green","Black","White","Pink","Yellow","Purple","Orange"];
-for (var i = 0; i < choiceArr.length; i++) {
-    console.log("My #" + (i + 1) + " choice is " + choiceArr[i]);
-}
+
 
 for (var i = 0; i < choiceArr.length; i++) { 
 
