@@ -1,4 +1,4 @@
- var recipe = {
+var recipe = {
     title: "Mole",
     servings: 2,
     ingredients: ["cinnamon", "Cumin", "cocoa"]
