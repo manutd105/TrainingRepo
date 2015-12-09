@@ -17,9 +17,11 @@ function gradeAssigner(score) {
                              else {
                                   return 'F';
     }
+
 }
 
-console.log("You have got a " + gradeAssigner(50) + " Grade.");
-console.log("You have got a " + gradeAssigner(70) + " Grade.");
-console.log("You have got a " + gradeAssigner(80) + " Grade.");
-console.log("You have got a " + gradeAssigner(99) + " Grade.");
+    console.log("You have got a " + gradeAssigner(50) + " Grade.");
+    console.log("You have got a " + gradeAssigner(70) + " Grade.");
+    console.log("You have got a " + gradeAssigner(80) + " Grade.");
+    console.log("You have got a " + gradeAssigner(99) + " Grade.");
+
