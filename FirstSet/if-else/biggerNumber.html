@@ -10,13 +10,45 @@
 	</script>
 </head>
 
-<body>
+<body>	
 	<p>Write a function named greaterNum that:
 	takes 2 arguments, both numbers. Returns whichever number is the greater (higher) number.
 
 	Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.")
 	</p>
+	<div>
+		<label>
+			Enter number 1:
+		</label>
+		<input type="text" id="num1">
 
+		</input>		
+	</div>
+	<div>
+		<label>
+			Enter number 2:
+		</label>
+		<input type="text" id="num2">
+
+		</input>
+	</div>
+	<div>
+		<button type="button" onclick="biggerNum(76,56)">
+			Calculate
+		</button>
+		
+		<!--<script type="text/javascript">window.alert(biggerNum.result);</script>-->
+		
+	</div>
+	<div>
+		<label>
+			output:
+		</label>
+		<!-- <input type="text" id="num3">
+
+		</input> -->
+		<h1 id="num3"></h1>
+	</div>
 
 </body>
 </html>
