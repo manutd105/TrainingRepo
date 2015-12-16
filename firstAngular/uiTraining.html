@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI Training</title>
+	<script src="angular.js"></script>
+	<script src="uiTraining.js"></script>
+</head>
+<body ng-app="training">
+	<div ng-controller="trainingController">
+		<table>
+			<thead>
+			  <tr>
+			   <th>firstname</th>
+			   <th>lastname</th>
+			   <th>dob</th>
+			   <th>hourlyRate</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr ng-repeat="p in people">
+			   <td>{{p.firstname | capitilize}}</td>
+			   <td>{{p.lastname | uppercase | reverseLn}}</td> 
+			   <td>{{p.dob | date:'yyyy'}}</td>
+			   <td>{{p.hourlyRate | newCurrency:"US$ / hr"}}</td> 
+			  </tr>
+			</tbody>
+		</table>		
+	</div>
+</body>
+</html>
