@@ -1,8 +1,5 @@
-console.log("service heyy part");
-
 angular.module('myRootApp').service('gitRepoService', function() {
-	console.log("service first part");
-			var rahulCommits = [
+	var rahulCommits = [
   {
     "sha": "a64c8253894e6e2bb1a2e8826f1d08a44db0520e",
     "commit": {
@@ -1057,8 +1054,7 @@ angular.module('myRootApp').service('gitRepoService', function() {
   }
 ];
 
-		this.getRahulCommits = function() {
-				return rahulCommits;
-		}
-		console.log("service second part");
+	this.getRahulCommits = function() {
+		return rahulCommits;
+	}
 });
