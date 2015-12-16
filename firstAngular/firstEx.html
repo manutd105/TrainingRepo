@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="angular.js"></script>
+		<script src="firstEx.js"></script>
+	</head>
+	<body ng-app="firstEx">
+		<div ng-controller="parentController">
+			<input type="text" ng-model="name"></input>
+			<button ng-click="buttonFunction()">Button</button>
+			<h3>Name = {{name}}</h3>
+
+			<div ng-controller="childController">
+				<input type="text" ng-model="name"></input>
+				<h3>Name = {{name}}</h3>
+			</div>
+
+		</div>
+
+	</body>
+</html>
