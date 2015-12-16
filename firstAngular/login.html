@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in page</title>
+	<script src="angular.js"></script>
+	<script src="login.js"></script>
+</head>
+<body ng-app="loginApp">
+	<div ng-controller="loginController">
+		<div ng-show="showLogin">
+			<label>User Name: </label>
+			<input type="text" placeholder="Enter a name here" ng-model="userName">
+			<p></p>
+			<label>Password: </label>
+			<input type="text" placeholder="Enter a password here" ng-model="password">
+			<p></p>
+			<button ng-click="login()">Login</button>
+		</div>
+		<p>{{message | uppercase}}</p>
+		<p>{{25 | currency : 'RS'}}</p>
+		<p>{{today | date : 'yyyy'}}</p>
+		
+	</div>
+	
+</body>
+</html>
