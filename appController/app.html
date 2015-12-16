@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular example</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
+
+	<script src="app.js"></script>
+	<script src="movieService.js"></script>
+	<script src="myController.js"></script>
+	<script src="myAnotherController.js"></script>
+
+</head>
+
+<body ng-app="myRootApp">
+
+		<div ng-controller="myController">
+				<h1>myController</h1>
+				<input type="button" ng-click="loadMovies()" value="Load Movies...">
+
+				<ul>
+						<li ng-repeat="m in movies">{{ m.name }}</li>
+				</ul>
+		</div>
+
+		<div ng-controller="myAnotherController">
+				<h1>myAnotherController</h1>
+				<ul>
+						<li ng-repeat="m in myAnotherControllerMovies">{{ m.name }}</li>
+				</ul>
+		</div>
+
+</html>
