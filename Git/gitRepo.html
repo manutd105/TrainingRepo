@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Github Commits</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 	<script src='angular.js'></script>
 	<script src='module.js'></script>
 	<script src='gitRepo.js'></script>
@@ -11,26 +14,33 @@
 	<div ng-controller='appController'>
 		<h3>Rahul's Github Repo:</h3>
 		<a href='https://github.com/manutd105/TrainingRepo'>https://github.com/manutd105/TrainingRepo</a>
-		<p></p>
+		<hr/>
 		<input type='button' ng-click='loadCommits()' value='Commits'>
 		<div ng-show='showCommits'>
-			<table>
-			<thead>
-			  <tr>
-			   <th>sha</th>
-			   <th>Commit Message</th>
-			   <th>Commit Date</th>
-			   <th>Author Name</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr ng-repeat='c in commits'>
-			   <td>{{c.sha}}</td>
-			   <td>{{c.commit.message}}</td> 
-			   <td>{{c.commit.author.date}}</td>
-			   <td>{{c.commit.author.name}}</td> 
-			  </tr>
-			</tbody>
+			<table class="table table-striped table-hover">
+				<thead>
+				  <tr>
+				   <th>#</th>
+				   <th>Image</th>
+				   <th>sha</th>
+				   <th>Commit Message</th>
+				   <th>Commit Date</th>
+				   <th>Author Name</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr ng-repeat='c in commits.data'>
+				   <td>{{$index + 1}}</td>
+				   <td>
+				   	<img src="{{c.author.avatar_url}}" height="42" width="42">
+				   </td>
+				   <td>{{c.sha}}</td>
+				   <td>{{c.commit.message}}</td> 
+				   <td>{{c.commit.author.date}}</td>
+				   <td>{{c.commit.author.name}}</td>
+				  </tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </body>
